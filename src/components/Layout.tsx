@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import Navbar from "./Navbar";
 
 const TemplateWrapper: React.FC = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -46,6 +47,7 @@ const TemplateWrapper: React.FC = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
+      <Navbar />
       <div>{children}</div>
     </div>
   );
