@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
+  "name": "recalc-plus",
+  "description": "ReCalc Plus CMS",
+  "version": "0.0.1",
+  "author": "Egon Meijers",
   "dependencies": {
     "bulma": "^0.9.0",
     "gatsby": "^2.20.35",
@@ -44,6 +44,17 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "tsc"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
@@ -58,6 +69,8 @@
     "@typescript-eslint/parser": "^4.8.2",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
     "prettier": "^2.0.5",
     "typescript": "^4.1.2"
   }
