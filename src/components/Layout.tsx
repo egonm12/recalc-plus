@@ -1,19 +1,21 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./all.sass";
+import { defaultTheme } from "../style/theme";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
-import Navbar from "./Navbar";
-import ResetCSS from "../style/reset";
 import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "../style/theme";
+import { NavBar } from "./NavBar";
+import ResetCSS from "src/style/reset";
+import { GlobalCSS } from "src/style/global";
 
 const TemplateWrapper: React.FC = ({ children }) => {
   const { title, description } = useSiteMetadata();
+
   return (
     <div>
       <ThemeProvider theme={defaultTheme}>
         <ResetCSS />
+        <GlobalCSS />
         <Helmet>
           <html lang="en" />
           <title>{title}</title>
@@ -52,8 +54,8 @@ const TemplateWrapper: React.FC = ({ children }) => {
             content={`${withPrefix("/")}img/og-image.jpg`}
           />
         </Helmet>
-        <Navbar />
-        <div>{children}</div>
+        <NavBar />
+        <>{children}</>
       </ThemeProvider>
     </div>
   );

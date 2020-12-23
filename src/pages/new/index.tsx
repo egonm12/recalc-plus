@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { graphql } from "gatsby";
+import { Hero } from "../../modules/Hero/Hero";
 
 export const NewPageTemplate: React.FC = () => {
   return (
-    <div>
-      <section></section>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
 import logo from "../img/logo.svg";
 
-const Navbar: React.FC = () => {
+const NavbarOld: React.FC = () => {
   const [active, setActive] = useState(false);
   const [navBarActiveClass, setNavBarActiveClass] = useState("");
 
@@ -71,4 +71,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default NavbarOld;
