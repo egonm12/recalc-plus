@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "src/components/Link";
+import { Content } from "src/components/Section/Section";
 import * as Styled from "./Hero.style";
 
 export const Hero: React.FC = () => {
   return (
     <Styled.HeroSection>
-      <Styled.ContentWrapper>
+      <Content>
         <Styled.HeroContent>
           <h1>
             Project software voor <span>klein tot middelgrote</span> bedrijven
@@ -25,7 +26,7 @@ export const Hero: React.FC = () => {
           </Styled.CTAWrapper>
         </Styled.HeroContent>
         <Styled.HeroImage />
-      </Styled.ContentWrapper>
+      </Content>
     </Styled.HeroSection>
   );
 };

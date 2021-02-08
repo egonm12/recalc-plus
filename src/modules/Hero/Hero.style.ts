@@ -1,26 +1,16 @@
 import { styled } from "src/style/theme";
+import { Section } from "../../components/Section/Section";
 
 export const ContentWrapper = styled.div``;
 export const HeroContent = styled.div``;
 export const CTAWrapper = styled.div``;
 export const HeroImage = styled.div``;
 
-export const HeroSection = styled.section`
+export const HeroSection = styled(Section)`
   background-color: ${({ theme }) => theme.colors.background.light};
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.primary};
   color: ${({ theme }) => theme.colors.text.secondary};
-  display: flex;
   height: 40rem;
-  justify-content: center;
-
-  ${ContentWrapper} {
-    height: 100%;
-    width: 100%;
-    max-width: ${({ theme }) => theme.measures.breakpoints.large};
-
-    display: flex;
-    justify-content: center;
-  }
 
   ${HeroContent}, ${HeroImage} {
     padding: ${({ theme }) =>
