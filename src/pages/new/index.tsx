@@ -2,11 +2,13 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { graphql } from "gatsby";
 import { Hero } from "../../modules/Hero/Hero";
+import { Features } from "../../modules/Features/Features";
 
 export const NewPageTemplate: React.FC = () => {
   return (
     <>
       <Hero />
+      <Features />
     </>
   );
 };

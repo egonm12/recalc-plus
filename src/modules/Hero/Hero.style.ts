@@ -7,7 +7,7 @@ export const CTAWrapper = styled.div``;
 export const HeroImage = styled.div``;
 
 export const HeroSection = styled(Section)`
-  background-color: ${({ theme }) => theme.colors.background.light};
+  background-color: ${({ theme }) => theme.colors.background.lighter};
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.primary};
   color: ${({ theme }) => theme.colors.text.secondary};
   height: 40rem;

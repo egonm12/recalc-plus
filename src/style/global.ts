@@ -70,6 +70,7 @@ export const GlobalCSS = createGlobalStyle<{ theme: Theme }>`
 
   h2 {
     font-size: ${({ theme }) => theme.typography.huge};
+    font-weight: 900;
   }
 
   h3 {

@@ -24,6 +24,7 @@ export const colors = {
     tertiary: tertiaryColor,
     light: brandGrey,
     lighter: brandLightGrey,
+    lightest: brandWhite,
   },
   border: {
     primary: brandGrey,
@@ -34,5 +35,6 @@ export const colors = {
     tertiary: brandLightestGrey,
     highlighted: brandOrange,
     default: brandGrey,
+    preHeader: secondaryColor,
   },
 };

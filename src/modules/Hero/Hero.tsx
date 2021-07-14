@@ -3,7 +3,7 @@ import { Link } from "src/components/Link";
 import { Content } from "src/components/Section/Section";
 import * as Styled from "./Hero.style";
 
-export const Hero: React.FC = () => {
+export const Hero: React.VFC = () => {
   return (
     <Styled.HeroSection>
       <Content>

@@ -20,6 +20,7 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-typescript`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
